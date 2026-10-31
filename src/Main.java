@@ -3,5 +3,12 @@
 public class Main {
     public static void main(String[] args) {
 
+        int num = 2;
+
+
+    }
+
+    public void changeNum(){
+
     }
 }
