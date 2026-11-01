@@ -88,7 +88,28 @@
     boolean isGood = true;
     ```
 
+<br>
 
+### Operators
+
+#### Arithmetic Operators
+- `+` - add
+- `-` - subtract
+- `*` - multiply
+- `/` - divide
+- `%` - modulus
+
+#### Prefix and Postfix Operators
+- `++` - increment operator
+- `--` - decrement operator
+
+#### Compound Assignment Operators
+- apply right side value to the left side, store result on the left side
+- `+=`
+- `-=`
+- `*=`
+- `/=`
+- `%=`
 
 
 
