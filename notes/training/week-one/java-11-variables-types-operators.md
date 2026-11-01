@@ -111,9 +111,22 @@
 - `/=`
 - `%=`
 
+#### Type Conversion
+- Implicit type conversion
+    - automatically performed by the compiler  
 
+    ``` 
+    int i = 50;
+    long x = i;
+    ```
 
+- Explicit type operator 
+  - performed explicitly in code with cast operator
 
+    ``` 
+    long x = 50;
+    int i = ()int l;
+    ```
 
 
 
