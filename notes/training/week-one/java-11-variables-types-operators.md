@@ -23,9 +23,22 @@
     final int i = 25;
     ```
 
+<br>
+
 ### Primitive Data Types
 - built into the language
 - foundation of all other types
+- primitive data types are stored by value
+  - each variable's values are unrelated to any other variable's values
+  - each variable are allocated an area of memory
+
+      ``` 
+      int first = 100;
+      int second = first;
+  
+      first = 50;
+      second = 70;
+      ```
 
 #### Four Categories
 
@@ -74,9 +87,6 @@
     ``` 
     boolean isGood = true;
     ```
-
-
-
 
 
 
