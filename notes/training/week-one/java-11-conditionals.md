@@ -35,6 +35,8 @@
         false-statement;
     }
 
+<br>
+
 ### Logical Operators
 - produce a single true/false value result from two true/false values
 - `&` - And
@@ -43,3 +45,22 @@
 - `!` - negation
 - `&&` - conditional And
 - `||` - conditional Or
+
+<br>
+
+### Switch Statement
+- test value against multiple matches
+  
+
+    switch(value-to-test){
+
+        case matching-value;
+            statements;
+            break;
+        case matching-value;
+            statements;
+            break;
+        default:
+            statements;
+
+    }
