@@ -58,3 +58,18 @@ for(int i = 0; i < vals.length; i++){
 }
 
 ```
+
+<br>
+
+### For Each Loop
+- execute a statement once for each array member
+- handles getting collection length
+- handles accessing each value
+
+```
+float[] f = {1.0f, 2.0f, 3.0f};
+
+for(float currentVal : f){
+    sout(currentVal);
+}
+```
