@@ -35,4 +35,11 @@
         false-statement;
     }
 
-
+### Logical Operators
+- produce a single true/false value result from two true/false values
+- `&` - And
+- `|` - Or
+- `^` - exclusive or XOR
+- `!` - negation
+- `&&` - conditional And
+- `||` - conditional Or
