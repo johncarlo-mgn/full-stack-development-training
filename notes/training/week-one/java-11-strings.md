@@ -102,6 +102,32 @@ fullAddress.insert(position, in);
 myAddress = fullAddress.toString();
 ```
 
+#### String Formatting
+
+```java
+// formating with decimal integers
+int i = 17, j = 18, k = 20;
+
+String formatted = String.format(
+        "Numbers %d, %d and %d", 
+        i, j, k);
+
+// formatting with decimals floating
+float f = 3.16516515;
+String oneDecimalOnly = String.format("One decimal %.1f", f);
+
+// formatting with digits group
+int l = 123456;
+String group = String.format("%,d", l); // 123,456
+
+int m = 123456.0;
+String groupWithDecimals = String.format("%,.2f", m); // 123,456.00
+
+// formatting with negative and positive
+int p = 10, n = -20;
+String positive = String.format("%+d", p); // +10
+String negative = String.format("%+d", n); // -20
+```
 
 
 
