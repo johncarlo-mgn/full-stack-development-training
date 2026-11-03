@@ -38,6 +38,48 @@ if(s3 == s4){};
 
 <br>
 
+#### String Class Methods
+- length 
+  - `lenght();`
+- create new strings from existing
+  - `concat();`
+  - `replace();`
+  - `toLowerCase();`
+  - `toUpperCase();`
+  - `trim();`
+  - `split();`
+- extract substring
+  - `chartAt();`
+  - `sunstring();`
+- test substring
+  - `conatains();`
+  - `endWith();`
+  - `startsWith();`
+  - `indexOf();`
+  - `lastIndexOf();`
+- comparison
+  - `equals()`
+  - `equalsIgnoreCase()`
+  - `isEmpty()`
+  - `compareTo()`
+  - `compareToIgnoreCase()`
+- formatting
+  - `format();`
+- String for non-string
+  - `valueOf();`
+``
+
+<br>
+
+#### Converting non-string Types to String
+- virtually all data types can be converted into a string
+
+```java
+int i = 100;
+String iString = String.valueOf(i); // "100"
+```
+
+
 
 
 
