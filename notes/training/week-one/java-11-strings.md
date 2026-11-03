@@ -79,6 +79,29 @@ int i = 100;
 String iString = String.valueOf(i); // "100"
 ```
 
+#### String Builder
+- provides mutable string buffer
+  - efficiently constructs string values
+  - add a new content to end with `append`
+  - add a new content within with `insert`
+- extract content to a string
+  - using `toString();`
+
+```java
+String location = "Mars";
+String city = " red city";
+StringBuilder fullAddress = new StringBuilder();
+fullAddress.append("I am ");
+fullAddress.append(location);
+fullAddress.append(city);
+String myAddress = fullAddress.toString();
+
+String in = "in ";
+int position = fullAddress.indexOf("Mars");
+fullAddress.insert(position, in);
+myAddress = fullAddress.toString();
+```
+
 
 
 
