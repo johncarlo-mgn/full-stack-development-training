@@ -79,6 +79,8 @@ int i = 100;
 String iString = String.valueOf(i); // "100"
 ```
 
+<br>
+
 #### String Builder
 - provides mutable string buffer
   - efficiently constructs string values
@@ -101,6 +103,8 @@ int position = fullAddress.indexOf("Mars");
 fullAddress.insert(position, in);
 myAddress = fullAddress.toString();
 ```
+
+<br>
 
 #### String Formatting
 
