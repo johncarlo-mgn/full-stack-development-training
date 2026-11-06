@@ -63,3 +63,65 @@ public class Main {
 ```
 
 <br><br>
+
+### Composition (Strong Relationship)
+
+- In a composition relationship, 
+  - the child object cannot exist without the parent. 
+  - The child object is entirely owned by the parent, and its lifecycle is managed completely by that parent.
+
+```text
+Rule:
+
+When the parent object is destroyed, 
+all of its composed child parts 
+are automatically destroyed along with it.
+```
+
+<br>
+
+#### Java Code Example:
+
+*Engine.java*
+
+```java
+public class Engine {
+    private String type;
+
+    public Engine(String type) {
+        this.type = type;
+    }
+}
+```
+
+*Car.java*
+
+```java
+public class Car {
+    private Engine engine; // Composition: Engine is PART OF the car
+
+    public Car() {
+        // The engine is created INSIDE the car's constructor. 
+        // It cannot exist without the Car.
+        this.engine = new Engine("V8");
+    }
+}
+```
+
+*Main.java*
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        Car luxuryCar = new Car();
+
+        luxuryCar = null;
+        // The luxuryCar is marked for deletion. 
+        // Because the Engine was created inside it, that Engine is now dead too.
+        System.out.println("The car and its engine are both marked for deletion.");
+    }
+}
+
+```
+
+<br><br>
