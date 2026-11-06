@@ -125,3 +125,24 @@ public class Main {
 ```
 
 <br><br>
+
+### How to Choose When Designing Your System
+
+#### Ask yourself this one simple question:
+```text 
+If I delete the main container object, 
+does the inner object still make sense on its own?
+```
+
+#### Use Aggregation (e.g., a Department has Professors
+
+- *If the department closes down, 
+the professors don't vanish from existence; 
+they just look for a new department)*
+
+
+#### No → Use Composition (e.g., a House has Rooms)
+
+- *If you demolish the house with dynamite, 
+the living room ceases to exist)*
+ 
